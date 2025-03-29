@@ -52,7 +52,7 @@ let view model dispatch =
     concat{
         div{
             comp<SmartTextArea>{
-                "UserRole"=>"system"
+                "UserRole"=>"HR administrator replying to an employee enquiry"
                 "Value" => model.x
                 attr.callback<string> "ValueChanged" (ChangeData >> dispatch )
                 "ValueExpression" => l
